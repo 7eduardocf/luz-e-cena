@@ -1,9 +1,13 @@
 import Banner from "./components/banner"
+import Header from "./components/header"
 
 function App() {
 
     return (
-        <Banner src="/Imagens/Banner Desktop.png" alt="Banner"/>
+        <>
+            <Header/>
+            <Banner src="/Imagens/Banner Desktop.png" alt="Banner"/>
+        </>
     )
 }
 
