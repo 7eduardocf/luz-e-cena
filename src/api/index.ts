@@ -1,8 +1,9 @@
 import axios from "axios";
-
-import React from 'react'
 import type { Movie } from "../types";
 
-export const getMovies = async():Promise<Movie[]> =>{
-    
+const BASE_URL = "http://localhost:3001/"
+
+export const getMovies = async(): Promise<Movie[]> =>{
+    const response = await axios.get<Movie[]>(`${BASE_URL}/movies`)
+    return response.data
 }
